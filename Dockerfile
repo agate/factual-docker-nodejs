@@ -7,7 +7,7 @@ RUN apt-get upgrade -y
 RUN apt-get install -y curl
 RUN apt-get install -y build-essential
 
-RUN curl -sL https://deb.nodesource.com/setup | bash -
+RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get install -y nodejs
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
